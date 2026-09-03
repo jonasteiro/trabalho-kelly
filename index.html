@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditsystem — Auditoria de Qualidade</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="mark">A</div>
+      <h1>Auditsystem</h1>
+      <p>Auditoria de qualidade e não conformidades</p>
+    </div>
+    <nav id="nav">
+      <button class="nav-item" data-tab="dashboard"><span class="dot"></span>Painel</button>
+      <button class="nav-item" data-tab="checklist"><span class="dot"></span>Nova auditoria</button>
+      <button class="nav-item" data-tab="ncs"><span class="dot"></span>Não conformidades<span class="nav-badge" id="ncBadge" style="display:none"></span></button>
+      <button class="nav-item" data-tab="comms"><span class="dot"></span>Comunicação</button>
+    </nav>
+    <div class="sidebar-foot">Os dados ficam salvos na sua conta e continuam disponíveis da próxima vez que você abrir esta ferramenta.</div>
+  </aside>
+  <main id="content"></main>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
